@@ -32,11 +32,11 @@ public class main {
         boolean vaiIrPotets = true;
 
 
-float apavuIzmers = 44.5F;
-System.out.println("apavu izmers " + apavuIzmers);
+        float apavuIzmers = 44.5F;
+        System.out.println("apavu izmers " + apavuIzmers);
 
-double grauduSvars = 158.3;
-System.out.println("Tika pārdoti  " + grauduSvars + "kg graudi");
+        double grauduSvars = 158.3;
+        System.out.println("Tika pārdoti  " + grauduSvars + "kg graudi");
 
 //Šodien ir sestdiena, lielveikals ir atvērts
         boolean isSuperMarketOpen = true;
@@ -44,42 +44,42 @@ System.out.println("Tika pārdoti  " + grauduSvars + "kg graudi");
         boolean isSchoolOpen = false;
         System.out.println("Vai veikals ir atvērts?" + isSuperMarketOpen);
 
-String sunaSkirne = "VAS";
-char valuta = '$';
-char dzimums = 'S';
+        String sunaSkirne = "VAS";
+        char valuta = '$';
+        char dzimums = 'S';
         char atzime = 'A';
 
-System.out.println("test" + valuta + atzime + dzimums);
-int a = 5;
-int b = 10;
-int summa;
-summa = a + b;
+        System.out.println("test" + valuta + atzime + dzimums);
+        int a = 5;
+        int b = 10;
+        int summa;
+        summa = a + b;
 
-System.out.println(summa);
-String name = "Sorina";
-System.out.println(name);
-String name2 = "Juris";
-System.out.println(name);
+        System.out.println(summa);
+        String name = "Sorina";
+        System.out.println(name);
+        String name2 = "Juris";
+        System.out.println(name2);
 
-int x = 10;
-int y = -45;
-int rezultats = x + y;
-System.out.println(rezultats);
+        int x = 10;
+        int y = -45;
+        int rezultats = x + y;
+        System.out.println(rezultats);
 
-rezultats = x-y;
-System.out.println(rezultats);
+        rezultats = x-y;
+        System.out.println(rezultats);
 
-rezultats = x*y;
-System.out.println(rezultats);
+        rezultats = x*y;
+        System.out.println(rezultats);
 
-rezultats = x/y;
-System.out.println(rezultats);
+        rezultats = x/y;
+        System.out.println(rezultats);
 
-rezultats = 10/2;
-System.out.println(rezultats);
-rezultats = 11%2;
-System.out.println(rezultats);
-           rezultats = 5*(3+7) /2;
-           System.out.println(rezultats);
+        rezultats = 10/2;
+        System.out.println(rezultats);
+        rezultats = 11%2;
+        System.out.println(rezultats);
+        rezultats = 5*(3+7) /2;
+        System.out.println(rezultats);
     }
 }

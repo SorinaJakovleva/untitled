@@ -3,7 +3,7 @@ package lekcijaDivi.majasDarbs;
 import java.util.Scanner;
 
 public class HomeWorkTwo {
-    public static void main() {
+    public static void main(String[] args) {
         //pārbaudīt vai skaitlis ir pozitīvs
         int x = 5;
         if (x > 0) {
@@ -80,15 +80,39 @@ public class HomeWorkTwo {
         }
         //vizītkarte
         String printCard;
-          System.out.println("Sākas programma");
-            printCard();
+        System.out.println(" ");
+        System.out.println("Vizītkarte");
+        printCard();
+        printNewLine();
+        printCard();
+        printNewLine();
+        printCard();
         System.out.println("Beidzas programma");
+
     }
 
-        public static void printCard(){
-                System.out.println("@@@@@@@@");
-                System.out.println("Sorina Jakovļeva");
-                System.out.println("Rīga");
-                System.out.println("$$$$$$$$");
-            }
+    public static void printNewLine() {
+        System.out.println(" ");
+    }
+
+    public static void printCard() {
+        System.out.println("@@@@@@@@");
+        System.out.println("Vārds:" + " Sorina");
+        System.out.println("Uzvārds:" + " Jakovļeva");
+        System.out.println("Tālruņa numurs:" + " +371 29437842");
+        System.out.println("Dzimšanas gads:" + " 1980");
+        System.out.println("@@@@@@@@");
+    }
+
+    //Vizītkarte Nr.2
+    String printBusinessCardTwo;
+
+    public static void printBusinessCardTwo() {
+        System.out.println("@@@@@@@@");
+        System.out.println("Vārds:" + " Emīlija");
+        System.out.println("Uzvārds:" + " Jakovļeva");
+        System.out.println("Tālruņa numurs:" + " +371 29437842");
+        System.out.println("Dzimšanas gads:" + " 1980");
+        System.out.println("@@@@@@@@");
+    }
 }

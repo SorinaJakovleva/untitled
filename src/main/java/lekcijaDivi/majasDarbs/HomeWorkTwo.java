@@ -79,9 +79,12 @@ public class HomeWorkTwo {
             }
         }
         //vizītkarte
-        public static void myCard(String[] args){
-          printCard();
-        }
+        String printCard;
+          System.out.println("Sākas programma");
+            printCard();
+        System.out.println("Beidzas programma");
+    }
+
         public static void printCard(){
                 System.out.println("@@@@@@@@");
                 System.out.println("Sorina Jakovļeva");

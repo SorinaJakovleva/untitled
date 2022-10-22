@@ -87,7 +87,11 @@ public class HomeWorkTwo {
         printCard();
         printNewLine();
         printCard();
+        printBusinessCardTwo("Sorina","Jakovļeva",29437842,1980);
+        printNewLine();
+        printBusinessCardTwo("Andrejs","Jakovļevs",26199563,1979);
         System.out.println("Beidzas programma");
+
 
     }
 
@@ -107,12 +111,15 @@ public class HomeWorkTwo {
     //Vizītkarte Nr.2
     String printBusinessCardTwo;
 
-    public static void printBusinessCardTwo() {
+
+    public static void printBusinessCardTwo(String vards, String uzvards, int talrunaNumurs, int dzimsanasGads) {
         System.out.println("@@@@@@@@");
-        System.out.println("Vārds:" + " Emīlija");
-        System.out.println("Uzvārds:" + " Jakovļeva");
-        System.out.println("Tālruņa numurs:" + " +371 29437842");
-        System.out.println("Dzimšanas gads:" + " 1980");
+        System.out.println(vards + " " + uzvards);
+        System.out.println("Tālruņa numurs:" + talrunaNumurs);
+        System.out.println("Dzimšanas gads:" + dzimsanasGads);
         System.out.println("@@@@@@@@");
     }
+
+
+
 }

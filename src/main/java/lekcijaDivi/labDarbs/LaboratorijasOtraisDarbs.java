@@ -3,6 +3,8 @@ package lekcijaDivi.labDarbs;
 import java.util.Scanner;
 
 public class LaboratorijasOtraisDarbs {
+    private static Scanner scanner;
+
     public static void main(String[] args) {
         int vecums = 19;
 
@@ -58,9 +60,9 @@ public class LaboratorijasOtraisDarbs {
         y = 5;
         System.out.println(x <= y);
 
-        int vecums1 = 15;
-        System.out.println("Vai cilvēks var balsot(kļūdains vairants)?" + (vecums1 > 18));
-        System.out.println("Vai cilvēks var balsot?" + (vecums1 >= 18));
+        int vecums2 = 15;
+        System.out.println("Vai cilvēks var balsot(kļūdains vairants)?" + (vecums2 > 18));
+        System.out.println("Vai cilvēks var balsot?" + (vecums2 >= 18));
 
 
         int age = 18;
@@ -141,5 +143,62 @@ public class LaboratorijasOtraisDarbs {
             default:
                 System.out.println("Šāds mēnesis neeksistē");
         }
+        String animal = "DOG";
+        String result;
+        switch (animal) {
+            case "DOG":
+            case "CAT":
+                result = "Domestic animal";
+                break;
+            case "TIGER":
+                result = "Wild animal";
+            default:
+                result = "Unknown animal";
+        }
+
+        System.out.println("This animal is: " + result);
+
+
+        System.out.println("Ievadi skaitli g");
+        int g = scanner.nextInt();
+        if (g < 0) {
+            System.out.println("Skaitlis ir negatīvs");
+        } else if (g == 0) {
+            System.out.println("Skaitlis ir nulle");
+        } else {
+            System.out.println("Skaitlis ir pozitīvs");
+        }
+
+
+        //zaļa gaisma, sarkana gaisma, dzeltena gaisma, nedeg neviena gaisma(skaties zimes)
+
+        //ievadi skaitli - izvadi vai pozitivs/negativs vai nulle
+
+
+        Scanner scanner1 = new Scanner(System.in);
+
+        System.out.println("Hello Lekcija 2");
+        int vecums1;
+        System.out.println("Kā tevi sauc?");
+        String name = scanner1.nextLine();
+        System.out.println("Labdien, " + name + "! Esi sveicināts/a manā programmā");
+
+        System.out.println("Ievadi cilveka vecumu...");
+        vecums1 = scanner1.nextInt();
+
+        if (vecums1 >= 18) {
+            System.out.println("Cilvēks drīkst balsot");
+        }
+
+        System.out.println("Programmas turpinājums...");
+
+        System.out.println("Ievadi skaitli a");
+        int a = scanner.nextInt();
+        System.out.println("Ievadi skaitli b");
+        int b = scanner.nextInt();
+        int summa = a + b;
+        System.out.println("Skaitla " + a + " un Skaitla " + b + " Summa ir " + summa);
+
     }
+
 }

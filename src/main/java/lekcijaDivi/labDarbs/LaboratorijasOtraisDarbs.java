@@ -6,47 +6,28 @@ public class LaboratorijasOtraisDarbs {
     private static Scanner scanner;
 
     public static void main(String[] args) {
-        int vecums = 19;
-
-        if (vecums >= 18) {
-            System.out.println("Cilvēks drīkst balsot");
-        }
-        System.out.println("Hello Lekcija 2");
-
-        if (vecums >= 18) {
-            System.out.println("Cilvēks drīkst balsot");
-            System.out.println("Cilvēks drīkst balsot");
-            System.out.println("Cilvēks drīkst balsot");
-            System.out.println("Cilvēks drīkst balsot");
-        }
-
-        System.out.println("Programmas turpinājums...");
-        try (Scanner scanner = new Scanner(System.in))
-        {
-            System.out.println("Ievadi cilveka vecumu...");
-
-            System.out.println("Kā tevi sauc?");
-            String name = scanner.nextLine();
-            System.out.println("Labdien, " + name + "Esi sveicināts/a manā programmā");
-        }
-
-        //Salīdzināšanas izteiksmes
-        //lielāks
+        //Salidzināšanas izteiksmes
+        //Lielāks
         int x = 3;
         int y = 2;
+        int speed = 20;
+
+
+        //šeit būs true
         System.out.println(x > y);
         y = 3;
         //šeit būs false
-        System.out.println(x < y);
-        //mazāks
+        System.out.println(x > y);
+        //Mazāks
         x = 5;
         y = 3;
         System.out.println(x < y);
         y = 10;
-        System.out.println(x > y);
-        //vienāds
+        System.out.println(x < y);
+        //vienads
         System.out.println(x == y);
         System.out.println(5 == 5);
+
         String luksaforaKrasa = "green";
         System.out.println(luksaforaKrasa.equals("green"));
         System.out.println(luksaforaKrasa.equals("red"));
@@ -55,35 +36,27 @@ public class LaboratorijasOtraisDarbs {
         System.out.println(x != y);
         System.out.println(!luksaforaKrasa.equals("red"));
 
-        //mazāks vienāds
+        //mazaks vienads
         x = 5;
-        y = 5;
+        y = 6;
+        int z = 2;
         System.out.println(x <= y);
 
-        int vecums2 = 15;
-        System.out.println("Vai cilvēks var balsot(kļūdains vairants)?" + (vecums2 > 18));
-        System.out.println("Vai cilvēks var balsot?" + (vecums2 >= 18));
 
+        int vecums = 18;
+        System.out.println("Vai cilvēks var balsot(kļūdains vairants)?" + (vecums > 18));
+        System.out.println("Vai cilvēks var balsot?" + (vecums >= 18));
+
+        System.out.println(x < 6 || z > y);
 
         int age = 18;
-        System.out.println("Paskaties cilvēka pasē");
-        if (age >= 18) {
-            System.out.println("Drīkst balsot");
-        }
-        System.out.println("Tālākas darbības");
-
-//pārbaudīt vai skaitlis ir negatīvs, ja ir, izvadīt uz ekrāna - NEGATĪVS
-        int skaitlis = -5;
-        if (skaitlis <= -1) {
-            System.out.println("NEGATĪVS");
-        }
-
-        int age1 = 18;
         boolean hasVoted = false;
 
         System.out.println("Paskaties cilvēka pasē");
-        if (age1 >= 18 && hasVoted == false) {
+        if (age >= 18 && hasVoted == false) {
             System.out.println("Drīkst balsot");
+        } else {
+            System.out.println("Nedrīkst balsot");
         }
 
         //es aizeju un nobalsoju
@@ -91,7 +64,12 @@ public class LaboratorijasOtraisDarbs {
 
         if (age >= 18 && hasVoted == false) {
             System.out.println("Drīkst balsot");
+        } else {
+            System.out.println("Nedrīkst balsot");
         }
+
+
+        System.out.println("Tālākas darbības");
 
 
         System.out.println("Ievadīsim skaitli i");

@@ -1,6 +1,6 @@
 package lekcijaTris.labDarbs;
 
-public class Main {
+public abstract class Main {
     public static void main(String[] args) {
         System.out.println("Sākās programma");
         printCard("Pēteris", "Kalniņš", "Ventspils", 43);

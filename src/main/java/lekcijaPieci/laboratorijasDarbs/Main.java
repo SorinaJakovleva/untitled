@@ -1,31 +1,48 @@
 package lekcijaPieci.laboratorijasDarbs;
 
 public class Main {
-    private static String vaiPrivatipasums;
-
     public static void main(String[] args) {
-        Cat muris = new Cat();
-        Dog reksis = new Dog(6);
-        Cow govs = new Cow();
-        muris.age = 3;
-        reksis.age = 6;
-        muris.breathe();
-        reksis.breathe();
+            Cat muris = new Cat();
+            Dog reksis = new Dog();
 
-        muris.makeSound();
-        reksis.makeSound();
+            muris.age = 3;
+            muris.canClimbTrees = true;
 
-        muris.sharpenClaws();
-        reksis.grow();
+            reksis.makeSound();
 
-        muris.printClimbing();
+            reksis.canClimbTrees = false;
 
-//        public void printHouse                                                                  () {
-//            System.out.println("House{" + "stavuDaudzums=" + stavuDaudzums + ", loguSkaits=" + loguSkaits + ", durvjuSkaits=" + durvjuSkaits + ", adrese='" + adrese + '\'' + ", griestuAugstums=" + griestuAugstums + ", kadastralaVertiba=" + kadastralaVertiba + ", vaiPrivatipasums=" + vaiPrivatipasums + '}');
-//        }
-//        House house = new House(1,2,3,"Brivibas", 2.5,100000L,true);
-//
-//        Calculator kalkulators = new Calculator();
-//        return System.out.println(kalkulators.add());
+            muris.breathe();
+            reksis.breathe();
+
+
+            muris.makeSound();
+
+            muris.eat();
+            reksis.eat();
+            muris.sharpenClaws();
+            reksis.growl();
+
+            muris.printClimbing();
+
+            House house = new House(1,2,3,"Brivibas",
+                    2.5,100000L,true);
+
+            house.printHouse();
+            house.setKadastralaVertiba(30000L);
+            house.setAdrese("Tallinas iela");
+
+            System.out.println("Mājas adrese ir: " + house.getAdrese());
+
+
+            house.printHouse();
+
+            Person cilveks1 = new Person("Juris","Kreilis");
+            System.out.println(cilveks1.getPersonsKods());
+
+
+            System.out.println(Calculator.add(5,10));
+            System.out.println(Calculator.add(5.0,10.0));
+            System.out.println(Calculator.add(3,5,7));
+        }
     }
-}

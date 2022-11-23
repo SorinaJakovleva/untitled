@@ -1,14 +1,19 @@
 package lekcijaPieci.laboratorijasDarbs;
 
-public class Dog extends Animal {
-    public void makeSound() {
+public class Dog extends Animal{
+    private int legCount = 4;
+
+    public void makeSound(){
+        test123();
         System.out.println("VAU VAU VAU");
     }
 
-    public void grow(){
-        System.out.println("RRRRRRRRRRRRR");
+    private void test123(){
+        System.out.println("PRIVATE METHOD");
     }
-    public Dog(int age){
-        super.age = age;
+
+    public void growl(){
+        System.out.println("RRRRRRRRRRRRRRRRRRRRR");
     }
+
 }

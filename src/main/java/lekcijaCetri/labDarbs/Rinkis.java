@@ -1,20 +1,24 @@
 package lekcijaCetri.labDarbs;
 
 public class Rinkis {
-    double r;
-    final double PI = Math.PI;
+    double r = 0;
 
-    public double rekinatLaukumu () {
-        return r*r* PI;
-    }
+    final double PI = 3.14; //final nozīme, ka vērība nemainās
+//    double PI = Math.PI;
 
-    public double rekinatRinkaLiniju () {
-        return 2*PI*r;
-    }
+//    static double PI = 3.14; static mainīgie atbilst visai klases definicijai, ja tā nav, t.i. objekta mainīgais
+
 
     public Rinkis(double r) {
         this.r = r;
     }
 
+    public double rekinatLaukumu() {
+        return r * r * PI;
+    }
+
+    public double rekinatLinijasGarumu(){
+        return 2 * PI * r;
+    }
 
 }

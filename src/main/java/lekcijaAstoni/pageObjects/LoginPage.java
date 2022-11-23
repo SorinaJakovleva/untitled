@@ -1,44 +1,27 @@
+package lekcijaAstoni.pageObjects;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
-public class SauceDemoLoginTest extends BaseTest {
-
-
-
-    @Test
-    public void testLoginWrongUsernameAndPassword() {
-        testLogin("asdasdasda","asdasdasdsa",
-                "Epic sadface: Username and password do not match any user in this service");
-    }
-
-    @Test
-    public void testLoginEmptyUsernameAndPassword() {
-        testLogin("","", "Epic sadface: Username is required");
-    }
-
-    @Test
-    public void testLoginEmptyUsernameAndFilledPassword () {
-        testLogin("", "dfsdfsdfsd", "Epic sadface: Username is required");
-    }
-
-    @Test
-    public void testLoginFilledUsernameAndEmptyPassword () {
-        testLogin("testtest", "", "Epic sadface: Password is required");
-    }
-
-
-
-    private void testLogin(String username, String password, String expectedErrorMessage){
-        WebElement lietotajVardsIevadesLauks = parluks.findElement(By.id("user-name"));
-        lietotajVardsIevadesLauks.sendKeys(username);
-
-        WebElement passwordField = parluks.findElement(By.id("password"));
-        passwordField.sendKeys(password);
 
 public class LoginPage {
 
-    private By
+    WebDriver parluks;
+    private By usernameInputField = By.id("user-name");
+    private By passwordInputField = By.id("password");
+private By loginButton = By.id("login-button");
 
+    public WebElement getLoginButton() {
+        return parluks.findElement(loginButton);
+    }
+
+    public WebElement getUsernameField(){
+      return parluks.findElement(usernameInputField);
+    }
+        public WebElement getPasswordField(){
+        return parluks.findElement(passwordInputField);
+    }
+    public LoginPage(WebDriver parluks){
+        this.parluks = parluks;
+    }
 }

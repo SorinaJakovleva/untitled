@@ -13,7 +13,6 @@ public class Main {
             Cilindrs cylinder1 = new Cilindrs(4, 7);
             System.out.println("Cilindra radius ir " + cylinder1.getRadiuss());
             System.out.println("Cilindra augstums ir " + cylinder1.getAugstums());
-
         }
     }
 

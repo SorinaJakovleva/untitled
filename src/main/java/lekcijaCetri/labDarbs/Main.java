@@ -2,62 +2,58 @@ package lekcijaCetri.labDarbs;
 
 public class Main {
     public static void main(String[] args) {
-        String vards = "Laura";
-        House majaViens = new House(2,10,2,"Brīvības iela 123", 3.2, 100000, true);
+        String vards = "Juris";
+        House majaViens = new House("Rīgas iela 2", 10, 50, 25, 3.25, 150000,true);
         majaViens.printHouse();
 
-        House majaDivi = new House(1, 8, 1, "Vainodes iela 15", 3.2, 60000, true);
-//        majaDivi.adrese = "Vaiņodes iela 15";
-//        majaDivi.stavuDaudzums = 1;
-//        majaDivi.durvjuSkaits = 1;
-//        majaDivi.kadastralaVertiba = 60000;
-//        majaDivi.grieztuAugstums = 3.2;
-//        majaDivi.loguSkaits = 8;
-//        majaDivi.vaiPrivatmaja = true;
+        House majaDivi = new House("Rostokas iela 12", 6, 8, 6, 2.5, 75000, false);
         majaDivi.printHouse();
 
-        System.out.println(majaViens.adrese);
-        System.out.println(majaDivi.adrese);
-
-        char [] mansVards = {'L', 'a', 'u', 'r', 'a'};
-        for (char burts : mansVards){
+        char[] mansVards = {'J', 'R', 'I'};
+        int i  = 1;
+        for (char burts : mansVards) {
+            System.out.println("CIKLS NR:" + i);
             System.out.println(burts);
+            i++;
         }
 
-        House [] majas = {majaViens, majaDivi};
+        House[] majas = {majaViens, majaDivi};
         for (House maja : majas) {
             maja.printHouse();
         }
 
-        // te nesanāk tikai vienam iedot vērtību
+
         Velosipeds mansVelo = new Velosipeds();
-        mansVelo.atrums = 9;
+        mansVelo.atrums = 2;
         mansVelo.printAtrums();
         Velosipeds mansVelo2 = new Velosipeds();
-        mansVelo.printAtrums();
+        mansVelo2.printAtrums();
+
 
         Velosipeds ritenBraucejsViens = new Velosipeds();
-        Velosipeds ritenBraucejsDivi = new Velosipeds();
-//        ritenBraucejsViens.riepa.platums = 10;
-        Velosipeds ritenisX = new Velosipeds("Giant", 21, 23);
+        for (int j = 0; j < 10; j++) {
+            new Velosipeds();
 
+        }
         ritenBraucejsViens.atrums = 40;
-        ritenBraucejsDivi.atrums = 30;
-
         ritenBraucejsViens.printAtrums();
+
+
+        Velosipeds ritenBraucejsDivi = new Velosipeds();
+        ritenBraucejsDivi.atrums = 30;
         ritenBraucejsDivi.printAtrums();
 
+        Velosipeds ritenisX = new Velosipeds("Merino", 21, 100);
+
         Velosipeds ritenBraucejsTris = new Velosipeds();
-        ritenBraucejsTris.zimols = "Liv";
+        ritenBraucejsTris.zimols = "ZZK";
         ritenBraucejsTris.printAtrums();
 
-        ritenBraucejsTris.paatrinajums();
-        ritenBraucejsTris.paatrinajums();
-        ritenBraucejsTris.paatrinajums();
-        ritenBraucejsTris.paatrinajums();
-        ritenBraucejsTris.printAtrums();
+        ritenBraucejsTris.paatrinajums(10);
+        ritenBraucejsTris.paatrinajums(20);
+        ritenBraucejsTris.paatrinajums(5);
+        ritenBraucejsTris.paatrinajums(15);
 
-        ritenBraucejsTris.paatrinajums();
         ritenBraucejsTris.printAtrums();
         System.out.println("Priekšā izskrien kaķis");
 
@@ -67,45 +63,53 @@ public class Main {
         ritenBraucejsTris.bremzesana();
         ritenBraucejsTris.bremzesana();
         ritenBraucejsTris.bremzesana();
-        ritenBraucejsTris.bremzesana();
         ritenBraucejsTris.printAtrums();
 
-        Koks koksViens = new Koks();
-        koksViens.suga = "liepa";
-        koksViens.augstums = 25;
-        koksViens.apkartmers = 120;
-        koksViens.printKoks();
 
-        Koks koksDivi = new Koks();
-        koksDivi.suga = "ozols";
-        koksDivi.augstums = 20;
-        koksDivi.apkartmers = 350;
-        koksDivi.printKoks();
+        Auto mansAuto = new Auto();
+        mansAuto.zimols = "BMW";
+        mansAuto.ritenuIzmers = 22;
+        mansAuto.vaiIrAvarija = false;
+        mansAuto.maxAtrums = 255.5;
+        mansAuto.printAtrums();
 
-        // apskatīties Jura kodu par objekta izmantošanu objektā zivs un kaķis
+        mansAuto.paatrinajums();
+        mansAuto.paatrinajums();
+        mansAuto.paatrinajums();
+        mansAuto.paatrinajums();
+        mansAuto.paatrinajums();
+        mansAuto.paatrinajums();
+        mansAuto.printAtrums();
+
+        System.out.println("Uz ceļa ir šķērslis");
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.printAtrums();
 
         Rinkis rinkisViens = new Rinkis(5);
-//        rinkisViens.r = 5;
         System.out.println(rinkisViens.rekinatLaukumu());
-        System.out.println(rinkisViens.rekinatRinkaLiniju());
+        System.out.println(rinkisViens.rekinatLinijasGarumu());
 
         Rinkis rinkisDivi = new Rinkis(10);
-//        rinkisDivi.r = 10;
         System.out.println(rinkisDivi.rekinatLaukumu());
-        System.out.println(rinkisDivi.rekinatRinkaLiniju());
-
-        Rinkis rinkisTris = new Rinkis(25);
-        System.out.println(rinkisTris.rekinatLaukumu());
-
-//      Par matemātiskām izteiksmēm
-        int a = 5;
-        int b = 10;
-
-        System.out.println(Math.max(a, b));
+        System.out.println(rinkisDivi.rekinatLinijasGarumu());
 
 
-
-
-
+//
+//        int a = 5;
+//        int b = 10;
+//        Math.max(a,b); // atgriež lielāko skaitli
     }
 }

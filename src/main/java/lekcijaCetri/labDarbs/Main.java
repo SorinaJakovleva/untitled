@@ -66,54 +66,50 @@ public class Main {
         ritenBraucejsTris.printAtrums();
 
 
-//<<<<<<< HEAD
-//        Automasina mansAuto = new Automasina();
-//=======
-//        Auto mansAuto = new Auto();
-//>>>>>>> origin/master
-//        mansAuto.zimols = "BMW";
-//        mansAuto.ritenuIzmers = 22;
-//        mansAuto.vaiIrAvarija = false;
-//        mansAuto.maxAtrums = 255.5;
-//        mansAuto.printAtrums();
+        Auto mansAuto = new Auto();
+        mansAuto.zimols = "BMW";
+        mansAuto.ritenuIzmers = 22;
+        mansAuto.vaiIrAvarija = false;
+        mansAuto.maxAtrums = 255.5;
+        mansAuto.printAtrums();
+
+        mansAuto.paatrinajums();
+        mansAuto.paatrinajums();
+        mansAuto.paatrinajums();
+        mansAuto.paatrinajums();
+        mansAuto.paatrinajums();
+        mansAuto.paatrinajums();
+        mansAuto.printAtrums();
+
+        System.out.println("Uz ceļa ir šķērslis");
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.bremzesana();
+        mansAuto.printAtrums();
+
+        Rinkis rinkisViens = new Rinkis(5);
+        System.out.println(rinkisViens.rekinatLaukumu());
+        System.out.println(rinkisViens.rekinatLinijasGarumu());
+
+        Rinkis rinkisDivi = new Rinkis(10);
+        System.out.println(rinkisDivi.rekinatLaukumu());
+        System.out.println(rinkisDivi.rekinatLinijasGarumu());
+
+
 //
-//        mansAuto.paatrinajums();
-//        mansAuto.paatrinajums();
-//        mansAuto.paatrinajums();
-//        mansAuto.paatrinajums();
-//        mansAuto.paatrinajums();
-//        mansAuto.paatrinajums();
-//        mansAuto.printAtrums();
-//
-//        System.out.println("Uz ceļa ir šķērslis");
-//        mansAuto.bremzesana();
-//        mansAuto.bremzesana();
-//        mansAuto.bremzesana();
-//        mansAuto.bremzesana();
-//        mansAuto.bremzesana();
-//        mansAuto.bremzesana();
-//        mansAuto.bremzesana();
-//        mansAuto.bremzesana();
-//        mansAuto.bremzesana();
-//        mansAuto.bremzesana();
-//        mansAuto.bremzesana();
-//        mansAuto.bremzesana();
-//        mansAuto.bremzesana();
-//        mansAuto.bremzesana();
-//        mansAuto.printAtrums();
-//
-//        Rinkis rinkisViens = new Rinkis(5);
-//        System.out.println(rinkisViens.rekinatLaukumu());
-//        System.out.println(rinkisViens.rekinatLinijasGarumu());
-//
-//        Rinkis rinkisDivi = new Rinkis(10);
-//        System.out.println(rinkisDivi.rekinatLaukumu());
-//        System.out.println(rinkisDivi.rekinatLinijasGarumu());
-//
-//
-////
-////        int a = 5;
-////        int b = 10;
-////        Math.max(a,b); // atgriež lielāko skaitli
-//    }
+//        int a = 5;
+//        int b = 10;
+//        Math.max(a,b); // atgriež lielāko skaitli
+    }
 }

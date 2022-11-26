@@ -2,9 +2,8 @@ package pageObjectsHomework;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
-public class CheckoutPage extends MainPage{
+public class CheckoutPage extends BasePage {
     private By continueButton = By.id("continue");
 
     private By firstNameInputField = By.id("first-name");

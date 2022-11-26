@@ -3,7 +3,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class LoginPage extends MainPage {
+public class LoginPage extends BasePage {
     private By usernameInputField = By.id("user-name");
     private By passwordInputField = By.id("password");
     private By loginButton = By.id("login-button");

@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class MainPage {
+public class BasePage {
     WebDriver driver;
     WebDriverWait wait;
     public BasePage(WebDriver driver) {
@@ -16,7 +16,7 @@ public class MainPage {
 
     private By pageTitle = By.cssSelector("span.title");
 
-    public MainPage(WebDriver driver) {
+    public BasePage(WebDriver driver) {
     }
 
     public WebElement getPageTitle(){

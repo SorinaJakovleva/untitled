@@ -1,4 +1,5 @@
 package lekcijaTris.majasDarbs;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class LoopHomeWork {
@@ -26,6 +27,8 @@ public class LoopHomeWork {
     //do while;
     //for loop;
     //for each.
+    //char data[] = {'a', 'b', 'c'};
+    //      String str = new String(data);
     public static void otraisUzdevums() {
 String[] menesuNosaukumi = {"Janvāris", "Februāris", "Marts", "Aprīlis"};
 int i = 0;
@@ -39,7 +42,7 @@ do {
     q ++;
 }
 while (q < menesuNosaukumi.length);
-for (int j = 0; j < menesuNosaukumi; j++) {
+for (int j = 0; menesuNosaukumi < j; j++) {
     System.out.println(menesuNosaukumi[j]);
 }
     for (String menesis : menesuNosaukumi){
@@ -67,7 +70,7 @@ for (int j = 0; j < menesuNosaukumi; j++) {
         System.out.println(novembris);
     }
 
-    char[] menesuSeciba = {'I', "II", "III", "IV", 'V', "VI", "VII", "VIII", "IX", 'X', "XI", "XII"};
+    char[] menesuSeciba = {'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'};
     int iii = 0;
     while (iii < menesuSeciba.length){
         System.out.println(menesuSeciba[iii]);
